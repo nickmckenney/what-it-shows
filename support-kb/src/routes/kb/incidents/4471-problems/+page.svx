@@ -4,7 +4,7 @@ title: '4471 holds two problems'
 owner: nickmckenney
 status: open
 reviewed: 2026-10-29
-signature: nickmckenney
+signature: v1.eyJzdWIiOiIyNjIiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5MzI3OTg2MywiZXhwIjoxNzkzMzY2MjYzfQ.dNGmBBVxdPj7cHPfgH0eRmhgRtsVuCtGvaBDf9LLiAc
 ---
 
 <script>
@@ -13,7 +13,7 @@ signature: nickmckenney
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
 
-  const signature = 'nickmckenney';
+  const signature = 'v1.eyJzdWIiOiIyNjIiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5MzI3OTg2MywiZXhwIjoxNzkzMzY2MjYzfQ.dNGmBBVxdPj7cHPfgH0eRmhgRtsVuCtGvaBDf9LLiAc';
 </script>
 
 Ticket #4471 was marked known. The desk merged the reports as one parser bug: the shared parser reads dates month-first, and these tenants write the day first.
