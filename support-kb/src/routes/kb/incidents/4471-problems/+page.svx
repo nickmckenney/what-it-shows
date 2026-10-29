@@ -1,0 +1,33 @@
+---
+layout: runbook
+title: '4471 holds two problems'
+owner: nickmckenney
+status: open
+reviewed: 2026-10-29
+signature: nickmckenney
+---
+
+<script>
+  import CauseTable from '#lib/kb/CauseTable.svelte';
+  import QueueTimeline from '#lib/kb/QueueTimeline.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+
+  const signature = 'nickmckenney';
+</script>
+
+Ticket #4471 was marked known and merged as one issue. The cause table reads the same reports and finds two causes. The parser rows stay on this ticket. The hint rows have no ticket of their own.
+
+<Callout kind="warn">
+The desk kept one ticket. The table shows a second cause.
+</Callout>
+
+## What was merged
+
+<CauseTable ticket={4471} />
+
+## Since April
+
+<QueueTimeline ticket={4471} />
+
+<RenderStamp {signature} />
