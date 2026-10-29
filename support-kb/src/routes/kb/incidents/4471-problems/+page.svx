@@ -2,7 +2,7 @@
 layout: runbook
 title: '4471 holds two problems'
 owner: nickmckenney
-status: open
+status: closed
 reviewed: 2026-10-29
 signature: v1.eyJzdWIiOiIyNjIiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5MzI3OTg2MywiZXhwIjoxNzkzMzY2MjYzfQ.dNGmBBVxdPj7cHPfgH0eRmhgRtsVuCtGvaBDf9LLiAc
 ---
@@ -31,5 +31,16 @@ The parser fix does not cover the hint rows. They need a ticket of their own.
 ## Since April
 
 <QueueTimeline ticket={4471} />
+
+## Engineering update
+
+#4471 closed on 5 October.
+
+- parser, 379 reports: fixed. `fix(dates): parse dd/mm for eu locales`
+- hint, 33 reports: won't fix. booking-v3 form retired
+
+<Callout>
+The parser fix covers the parser rows. The hint rows stay as they are: booking-v3 was retired.
+</Callout>
 
 <RenderStamp {signature} />
