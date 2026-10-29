@@ -1,0 +1,16 @@
+{
+  "name": "support-kb",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node render-page.mjs"
+  },
+  "dependencies": {
+    "svelte": "^5.39.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.2.0",
+    "mdsvex": "^0.12.6",
+    "vite": "^7.1.0"
+  }
+}
