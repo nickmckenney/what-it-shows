@@ -16,10 +16,12 @@ signature: nickmckenney
   const signature = 'nickmckenney';
 </script>
 
-Ticket #4471 was marked known and merged as one issue. The cause table reads the same reports and finds two causes. The parser rows stay on this ticket. The hint rows have no ticket of their own.
+Ticket #4471 was marked known. The desk merged the reports as one parser bug: the shared parser reads dates month-first, and these tenants write the day first.
+
+The cause table keeps those parser rows on #4471. The other rows are the hint bug. booking-v3 prints MM/DD/YYYY under the date field. On a day-first tenant the person types the month first, and the form reads the day first. Those rows were merged into #4471 and have no ticket of their own.
 
 <Callout kind="warn">
-The desk kept one ticket. The table shows a second cause.
+The parser fix does not cover the hint rows. They need a ticket of their own.
 </Callout>
 
 ## What was merged
