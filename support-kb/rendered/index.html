@@ -50,7 +50,7 @@
   </header>
   <main>
     <p>Ticket #4471 was marked known. The desk merged the reports as one parser bug: the shared parser reads dates month-first, and these tenants write the day first.</p>
-    <p>The cause table keeps those parser rows on #4471. The other rows are the hint bug. booking-v3 prints MM/DD/YYYY under the date field. On a day-first tenant the person types the month first, and the form reads the day first. Those rows were merged into #4471 and have no ticket of their own.</p>
+    <p>The cause table keeps the parser rows on #4471. Those rows are the parser ticket. The hint rows were merged into the same ticket and have none of their own: booking-v3 prints MM/DD/YYYY, the person types the month first, and the form reads the day first. The hint ticket is the second problem.</p>
     <aside class="warn">The parser fix does not cover the hint rows. They need a ticket of their own.</aside>
     <h2>What was merged</h2>
     <p class="sum"><strong>412</strong> reports merged into #4471 · <strong>2</strong> causes</p>
